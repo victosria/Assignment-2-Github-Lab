@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Semantic HTML Demo</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        color: #333;
+        background-color: #f4f4f4;
+      }
+
+      header {
+        background-color: #2c3e50;
+        color: white;
+        padding: 1rem 0;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      header h1 {
+        text-align: center;
+        margin-bottom: 1rem;
+        font-size: 2rem;
+      }
+
+      nav {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 2rem;
+      }
+
+      nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+      }
+
+      nav a {
+        color: white;
+        text-decoration: none;
+        padding: 0.5rem 1rem;
+        border-radius: 4px;
+        transition: background-color 0.3s ease;
+      }
+
+      nav a:hover {
+        background-color: #34495e;
+      }
+
+      main {
+        max-width: 1200px;
+        margin: 2rem auto;
+        padding: 0 2rem;
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      section,
+      article {
+        margin-bottom: 2rem;
+        padding: 2rem;
+        border-bottom: 1px solid #eee;
+      }
+
+      section:last-child,
+      article:last-child {
+        border-bottom: none;
+      }
+
+      h2 {
+        color: #2c3e50;
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
+      }
+
+      p {
+        margin-bottom: 1rem;
+        text-align: justify;
+      }
+
+      footer {
+        background-color: #2c3e50;
+        color: white;
+        text-align: center;
+        padding: 2rem 0;
+        margin-top: 2rem;
+      }
+
+      .highlight {
+        background-color: #e8f4fd;
+        padding: 1rem;
+        border-left: 4px solid #3498db;
+        margin: 1rem 0;
+        border-radius: 4px;
+      }
+
+      @media (max-width: 768px) {
+        nav ul {
+          flex-direction: column;
+          gap: 0.5rem;
+        }
+
+        main {
+          margin: 1rem;
+          padding: 0 1rem;
+        }
+
+        section,
+        article {
+          padding: 1rem;
+        }
+
+        h1 {
+          font-size: 1.5rem !important;
+        }
+
+        h2 {
+          font-size: 1.2rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>My Website</h1>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home">
+        <h2>Welcome to My Website</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vel
+          fermentum felis. Sed euismod, nunc vel tincidunt lacinia, nisl nisl
+          aliquam nisl, eu aliquam nisl nisl sit amet lorem. Sed euismod, nunc
+          vel tincidunt lacinia, nisl nisl aliquam nisl, eu aliquam nisl nisl
+          sit amet lorem.
+        </p>
+
+        <div class="highlight">
+          <p>
+            <strong>Important:</strong> This is a demonstration of semantic HTML
+            structure with proper accessibility features and responsive design.
+          </p>
+        </div>
+      </section>
+
+      <article id="about">
+        <h2>About Us</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel
+          bibendum elit. Vestibulum ante ipsum primis in faucibus orci luctus et
+          ultrices posuere cubilia curae; Mauris viverra veniam sit amet lacus
+          cursus, eu tempor magna facilisis.
+        </p>
+
+        <p>
+          Pellentesque habitant morbi tristique senectus et netus et malesuada
+          fames ac turpis egestas. Sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+          exercitation ullamco laboris.
+        </p>
+      </article>
+
+      <section id="services">
+        <h2>Our Services</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse a
+          dui vel enim tempor vehicula. Nulla facilisi. Cras vehicula, nunc vel
+          tincidunt lacinia, nisl nisl aliquam nisl, eu aliquam nisl nisl sit
+          amet lorem.
+        </p>
+
+        <p>
+          Sed euismod, nunc vel tincidunt lacinia, nisl nisl aliquam nisl, eu
+          aliquam nisl nisl sit amet lorem. Pellentesque habitant morbi
+          tristique senectus et netus et malesuada fames ac turpis egestas.
+        </p>
+      </section>
+
+      <section id="contact">
+        <h2>Contact Information</h2>
+        <p>
+          Ready to get in touch? We'd love to hear from you. Here's how you can
+          reach us:
+        </p>
+
+        <div class="highlight">
+          <p><strong>Email:</strong> info@mywebsite.com</p>
+          <p><strong>Phone:</strong> (555) 123-4567</p>
+          <p>
+            <strong>Address:</strong> 123 Web Street, Internet City, IC 12345
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        &copy; 2025 My Website. All rights reserved. Built with semantic HTML5.
+      </p>
+    </footer>
+  </body>
+</html>
